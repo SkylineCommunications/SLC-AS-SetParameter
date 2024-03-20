@@ -78,7 +78,7 @@ namespace SetParameter_1
 
 		private static Element GetElement(IEngine engine)
 		{
-            var elementIdInputParameter = engine.GetScriptParam("elementId").Value;
+            var elementIdInputParameter = GetFirstValueFromStringArrayJson(engine.GetScriptParam("elementId").Value);
 
             try
 			{

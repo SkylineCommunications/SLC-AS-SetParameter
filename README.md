@@ -8,8 +8,8 @@ The script requires the following input:
 
 ### ElementId [id: 2]
 	
-The id of the element that needs to be set.
-This needs to be formatted as "DMA Id/Element Id" (example: 100/10).
+The id (DMA/Element Id) of the element that needs to be set.
+This needs to be formatted as a string array (example: ["100/10"]).
 
 ### ParameterId [id: 3]
 	

@@ -69,7 +69,7 @@ namespace SLCASSetParameter
 			}
 
 			var paramIdString = engine.GetScriptParam(11).Value.Trim().TrimStart('[', '"').TrimEnd('"', ']');
-			if (String.IsNullOrWhiteSpace(paramIdString) || Int32.TryParse(paramIdString, out int paramId))
+			if (String.IsNullOrWhiteSpace(paramIdString) || !Int32.TryParse(paramIdString, out int paramId))
 			{
 				engine.ExitFail($"Invalid Parameter ID: '{paramIdString}'");
 				return;
